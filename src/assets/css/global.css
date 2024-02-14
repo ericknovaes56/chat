@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #131313;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  .load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+  }
+  .load img{
+    width: 200px;
+    animation: float 3s ease infinite;
+  }
+  @keyframes float {
+    0%{
+      transform: translateY(0);
+    }50%{
+      transform: translateY(20px);
+    }
+    0%{
+      transform: translateY(0);
+    }
+  }
+  .load{
+    padding: 14px;
+  }
+  .load .boll {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 999px ;
+  }
+  .load span{
+    text-align: center;
+  }
+  .load .boll.green{
+    background-color: green;
+  }
+  .load .boll.red{
+    background-color: red;
+  }
+  .load .status{
+    display: flex;
+    gap: 10px;
+  }
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 10px;
+    color: white;
+}
+.login .name{
+    width: 250px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.login button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+.prefeito {
+    position: absolute;
+    inset: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    max-width: 1000px;
+    margin: auto;
+    gap: 14px;
+}
+.prefeito .message{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #3d3947;
+    border-radius: 20px;
+    padding: 15px;
+    color:rgb(255, 255, 255);
+    gap: 20px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.prefeito .message::-webkit-scrollbar{
+    display: none;
+}
+.prefeito .message > div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background-color:#9e9da02a; 
+    padding: 10px;
+    border-radius: 10px;
+}
+.prefeito .message span{
+    font-size: 24px;
+    color: #ada2a2;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.prefeito .actions{
+    background-color: #1a1e29;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 20px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    padding: 10px;
+    align-items: center;
+}
+.prefeito .actions input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0 30px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+.prefeito .actions button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    flex: none;
+    cursor: pointer;
+    
+}
