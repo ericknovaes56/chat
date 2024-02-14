@@ -31,7 +31,6 @@ io.on('connection', (socket) => {
   socket.on('sendMessage', (data) => {
     console.log('Mensagem recebida:', data);
 
-    // Enviar a mensagem para todos os clientes conectados, incluindo o remetente
     io.emit('receiveMessage', { nome: data.nome, msg: data.msg });
   });
 });

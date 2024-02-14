@@ -30,7 +30,7 @@ export default function Load() {
 
     async function getStatus(){
         try {
-          const status = await fetch("http://localhost:8080/")
+          const status = await fetch("https://chatserver-ess2.onrender.com/")
           const result = await status.json()
           if (result && result.code == 200){
             window.location.href="/app"
